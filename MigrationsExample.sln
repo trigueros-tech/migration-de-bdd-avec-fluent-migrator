@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationsExample", "src\MigrationsExample\MigrationsExample.csproj", "{6D647D25-853A-46FA-93CE-48542556B6DC}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrationsExample", "src\MigrationsExample\MigrationsExample.csproj", "{6D647D25-853A-46FA-93CE-48542556B6DC}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "src\Database\Database.sqlproj", "{C51F45E0-9534-4427-B46C-A2B7ADC12006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,17 @@ Global
 		{6D647D25-853A-46FA-93CE-48542556B6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D647D25-853A-46FA-93CE-48542556B6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D647D25-853A-46FA-93CE-48542556B6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51F45E0-9534-4427-B46C-A2B7ADC12006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51F45E0-9534-4427-B46C-A2B7ADC12006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51F45E0-9534-4427-B46C-A2B7ADC12006}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C51F45E0-9534-4427-B46C-A2B7ADC12006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51F45E0-9534-4427-B46C-A2B7ADC12006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51F45E0-9534-4427-B46C-A2B7ADC12006}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D07F8DE-C022-419D-973E-E072BFF4B747}
 	EndGlobalSection
 EndGlobal

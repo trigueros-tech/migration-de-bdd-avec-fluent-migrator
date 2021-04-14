@@ -54,6 +54,15 @@ namespace MigrationsExample
 
             // Execute the migrations
             runner.MigrateUp();
+            
+            Console.WriteLine("Press enter to rollback");
+            
+            runner.MigrateDown(0);
+            
+            Console.WriteLine("Finished, press enter to exit");
+            
+            
+            
         }
     }
 }
