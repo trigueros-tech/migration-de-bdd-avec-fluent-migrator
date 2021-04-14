@@ -3,7 +3,7 @@ using FluentMigrator;
 namespace MigrationsExample.Migrations
 {
     [Migration(202104020119)]
-    public class AddPriorityToTasksTable : AutoReversingMigration
+    public class AddPriorityToTasksTable : Migration
     {
         public override void Up()
         {
@@ -12,6 +12,11 @@ namespace MigrationsExample.Migrations
                     .AsInt32()
                     .NotNullable()
                     .WithDefaultValue(0);
+        }
+
+        public override void Down()
+        {
+            Delete.Column("Priority").FromTable("Tasks");
         }
     }
 }
